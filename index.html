@@ -15,10 +15,33 @@
           <div class="Bloco">
        <div class="label bg-green">USER</div>
        <div class="label bg-red">PC</div>
-       <div class="score" class="points"> 
+       <div class="counter" class="points"> 
         0:0
        </div>
     </div>
+    <div class=" Bloco bg-grey selected-image">
+        <div id="USER">
+            <img src="image/pedra.png">
+        </div>
+    <div id="PC" class="reverse"></div>
+    </div>
+    <h2>choose your move</h2>
+    <div class="buttons">
+        <label>
+            <input type="radio" onclick="reset()" name="Play" value="Rock" checked>
+            <button class="btn"><img src="image/pedra.png"></button>
+        </label>
+        <label>
+            <input type="radio" onclick="reset()" name="Play" value="Paper" checked>
+            <button class="btn"><img src="image/papel.png"></button>
+        </label>
+        <label>
+            <input type="radio" onclick="reset()" name="Play" value="scissors" checked>
+            <button class="btn"><img src="image/tesoura.png"></button>
+        </label>
+    </div>
+    <div class="Bloco">
+        <button id="playing" class="btn-play">play</button>
     </div>
     <div id="winner" class="container end-screen none">
         <span>🏆 🏆 🏆</span>
@@ -31,6 +54,6 @@
         <button onclick="Newgame()">Play Again</button>
 
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
